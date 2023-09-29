@@ -28,6 +28,10 @@ nav {
 .grid-photo {
   display: flex;
   align-self: center;
+  max-width: 100%;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  height: auto;
 }
 
 .content-Title {
@@ -42,7 +46,7 @@ nav {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 52px;
   line-height: 110%;
 
   color: #000000;
@@ -52,21 +56,44 @@ nav {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 110%;
   color: #222222;
   max-width: 700px;
 }
 
+.card--div {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding-left: 30px;
+}
 .card {
-  width: 300px;
-  font-size: 24px;
-  margin: 20px;
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  min-width: 200px;
+  max-width: 300px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.4);
+  border-radius: 9px;
 }
 
 .card--img {
   width: 100%;
   border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+
+.card--info > p {
+  text-overflow: ellipsis;
+  min-width: 15px;
+  height: auto;
+  font-size: flex;
+  margin-left: 10px;
 }
 
 .card--stats {
@@ -76,9 +103,15 @@ nav {
 
 .card--star {
   height: 20px;
+  margin-left: 10px;
 }
 .card--stats > span {
-  margin-left: 10px;
+  text-overflow: ellipsis;
+  min-width: 20px;
+  height: auto;
+  font-size: 16px;
+  margin-left: 5px;
+
 }
 
 
@@ -88,3 +121,4 @@ nav {
 .gray {
   color: gray;
 }
+

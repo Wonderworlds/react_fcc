@@ -4,15 +4,30 @@ import viteLogo from '/vite.svg'
 import Navbar from '../components/Navbar'
 import MainContent from '../components/MainContent'
 import Card from "../components/Card"
+import CardData from "./data.js"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const dataElement = CardData.map((card) =>
+      {return <Card 
+          key={card.id}
+          img={card.coverImg}
+          rating={card.stats.rating}
+          reviewCount={card.stats.reviewCount}
+          location={card.location}
+          title={card.title}
+          price={card.price}
+          currency="$"
+        />
+      }
+    )
 
   return (
     <>
       <Navbar />
-      {/* <MainContent /> */}
-      <Card />
+      <MainContent />
+      <div className="card--div">
+        {dataElement}
+      </div>
     </>
   )
 }
