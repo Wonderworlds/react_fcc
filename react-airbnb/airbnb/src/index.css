@@ -81,6 +81,15 @@ nav {
   border-radius: 9px;
 }
 
+.card--badge {
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 7px;
+
+}
+
 .card--img {
   width: 100%;
   border-radius: 9px;
