@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #2B283A;
+  padding:40px;
+}
+
+main {
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  height: 600px;
+  max-width: 800px;
+}
+
+.main--box {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main--title {
+  text-align: center;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: #2B283A;
+}
+
+.main--box > h3 {
+  text-align: center;
+  margin: 0px 80px 40px 80px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  color: #4A4E74;
+}
+
+.main--game {
+  display: grid;
+  gap: 25px;
+  grid-template: auto auto / repeat(5, 1fr);
+}
+
+.die, .dieheld {
+  width: 65px;
+  height: 65px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.die {
+  background-color: white;
+}
+
+.dieheld {
+  background-color: #59E391;
+}
+
+.die > h1 {
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.main--roll {
+  margin-top: 40px;
+  width: 200px;
+  height: 75px;
+  color: white;
+  background-color: #5035FF;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+}
+
+.main--roll:active {
+  box-shadow: inset 5px 5px 10px -1px rgba(0, 0, 0, 0.7);
+}
